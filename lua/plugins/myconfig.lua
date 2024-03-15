@@ -14,14 +14,25 @@ return {
   { "folke/trouble.nvim", enabled = false },
   { "dstein64/vim-startuptime", enabled = false },
   { "RRethy/vim-illuminate", enabled = false },
-
-  -- add symbols-outline
+  
+  -- close virtual_text
   {
-    "simrat39/symbols-outline.nvim",
-    cmd = "SymbolsOutline",
-    keys = { { "<leader>cs", "<cmd>SymbolsOutline<cr>", desc = "Symbols Outline" } },
-    config = true,
+    "neovim/nvim-lspconfig",
+    opts = {
+      diagnostics = {
+        virtual_text = false,
+      },
+    },
   },
+
+ 
+  -- add symbols-outline
+  --{
+  --  "simrat39/symbols-outline.nvim",
+  --  cmd = "SymbolsOutline",
+  --  keys = { { "<leader>cs", "<cmd>SymbolsOutline<cr>", desc = "Symbols Outline" } },
+  --  config = true,
+  --},
 
   -- add more treesitter parsers
   {
