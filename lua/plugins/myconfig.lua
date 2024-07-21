@@ -11,7 +11,7 @@ return {
   --  	{"folke/which-key.nvim",enabled = false},
   { "folke/flash.nvim", enabled = false },
   --{"folke/neodev.nvim",enabled = false},
-  { "folke/trouble.nvim", enabled = false },
+  --{ "folke/trouble.nvim", enabled = false },
   { "dstein64/vim-startuptime", enabled = false },
   { "RRethy/vim-illuminate", enabled = false },
   
