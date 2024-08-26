@@ -65,7 +65,20 @@ return {
     },
   },
 
-
+  -- format c/c++ code with clang-format.short-cut is <leader>cf
+  {
+    "stevearc/conform.nvim",
+    optional = true,
+    opts = {
+      --style = "google",
+      formatters_by_ft = {
+        ["c"] = { "clang_format" },
+        ["cpp"] = { "clang_format" },
+        ["c++"] = { "clang_format" },
+        },
+      },
+    },
+  }
   -- config nvim-tree
   -- {
   --   "nvim-tree/nvim-tree.lua",
